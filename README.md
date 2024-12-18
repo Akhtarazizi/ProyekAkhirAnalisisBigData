@@ -59,8 +59,7 @@ warnings.filterwarnings("ignore")
 - **Jumlah Variabel**: Dataset awal memiliki 15 kolom.
 - **Kekhasan Dataset**: Data berisi beberapa nilai kosong (missing values) yang perlu diimputasi dan beberapa atribut numerik yang memerlukan normalisasi.
 - **Bentukan Dataset** :
-  'spotify_songs.csv'
- 
+  
 ### Langkah Pembersihan Data
 1. **Mengimpor Data**:
    Dataset diimpor menggunakan Pandas.
