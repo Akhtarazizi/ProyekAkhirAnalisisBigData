@@ -68,11 +68,13 @@ warnings.filterwarnings("ignore")
    Data numerik dinormalisasi menggunakan `MinMaxScaler`.
 
 ### Dataset Setelah Dibersihkan
-Setelah pembersihan, data final mencakup 12 kolom utama yang siap untuk dianalisis lebih lanjut. Berikut adalah cuplikan data:
-```python
-# Cuplikan Data
-print(df.head())
-```
+Setelah pembersihan, data final mencakup 12 kolom utama yang siap untuk dianalisis lebih lanjut. Berikut adalah cuplikan data:|index|track\_id|track\_name|track\_artist|track\_popularity|track\_album\_id|track\_album\_name|track\_album\_release\_date|playlist\_name|playlist\_id|playlist\_genre|playlist\_subgenre|danceability|energy|key|loudness|mode|speechiness|acousticness|instrumentalness|liveness|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|0|6f807x0ima9a1j3VPbc7VN|i dont care with justin bieber  loud luxury remix|ed sheeran|66\.0|2oCs0DGTsRO98Gh5ZSl2Cx|I Don't Care \(with Justin Bieber\) \[Loud Luxury Remix\]|2019-06-14|Pop Remix|37i9dQZF1DXcZDD7cfEKhW|pop|dance pop|0\.748|0\.916|6\.0|-2\.634|1\.0|0\.0583|0\.102|0\.0|0\.0653|
+|1|0r7CVbZTWZgbTCYdfa2P31|memories  dillon francis remix|maroon 5|67\.0|63rPSO264uRjW1X5E6cWv6|Memories \(Dillon Francis Remix\)|2019-12-13|Pop Remix|37i9dQZF1DXcZDD7cfEKhW|pop|dance pop|0\.726|0\.815|11\.0|-4\.969|1\.0|0\.0373|0\.0724|0\.00421|0\.357|
+|2|1z1Hg7Vb0AhHDiEmnDE79l|all the time  don diablo remix|zara larsson|70\.0|1HoSmj2eLcsrR0vE9gThr4|All the Time \(Don Diablo Remix\)|2019-07-05|Pop Remix|37i9dQZF1DXcZDD7cfEKhW|pop|dance pop|0\.675|0\.931|1\.0|-3\.432|0\.0|0\.0742|0\.0794|2\.33e-05|0\.11|
+|3|75FpbthrwQmzHlBJLuGdC7|call you mine  keanu silva remix|the chainsmokers|60\.0|1nqYsOef1yKKuGOVchbsk6|Call You Mine - The Remixes|2019-07-19|Pop Remix|37i9dQZF1DXcZDD7cfEKhW|pop|dance pop|0\.718|0\.93|7\.0|-3\.778|1\.0|0\.102|0\.0287|9\.43e-06|0\.204|
+|4|1e8PAfcKUYoKkxPhrHqw4x|someone you loved  future humans remix|lewis capaldi|69\.0|7m7vv9wlQ4i0LFuJiE2zsQ|Someone You Loved \(Future Humans Remix\)|2019-03-05|Pop Remix|37i9dQZF1DXcZDD7cfEKhW|pop|dance pop|0\.65|0\.833|1\.0|-4\.672|1\.0|0\.0359|0\.0803|0\.0|0\.0833|
 
 ---
 
