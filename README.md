@@ -68,7 +68,8 @@ warnings.filterwarnings("ignore")
    Data numerik dinormalisasi menggunakan `MinMaxScaler`.
 
 ### Dataset Setelah Dibersihkan
-Setelah pembersihan, data final mencakup 12 kolom utama yang siap untuk dianalisis lebih lanjut. Berikut adalah cuplikan data:|index|track\_id|track\_name|track\_artist|track\_popularity|track\_album\_id|track\_album\_name|track\_album\_release\_date|playlist\_name|playlist\_id|playlist\_genre|playlist\_subgenre|danceability|energy|key|loudness|mode|speechiness|acousticness|instrumentalness|liveness|
+Setelah pembersihan, data final mencakup 12 kolom utama yang siap untuk dianalisis lebih lanjut. Berikut adalah cuplikan data:
+|index|track\_id|track\_name|track\_artist|track\_popularity|track\_album\_id|track\_album\_name|track\_album\_release\_date|playlist\_name|playlist\_id|playlist\_genre|playlist\_subgenre|danceability|energy|key|loudness|mode|speechiness|acousticness|instrumentalness|liveness|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |0|6f807x0ima9a1j3VPbc7VN|i dont care with justin bieber  loud luxury remix|ed sheeran|66\.0|2oCs0DGTsRO98Gh5ZSl2Cx|I Don't Care \(with Justin Bieber\) \[Loud Luxury Remix\]|2019-06-14|Pop Remix|37i9dQZF1DXcZDD7cfEKhW|pop|dance pop|0\.748|0\.916|6\.0|-2\.634|1\.0|0\.0583|0\.102|0\.0|0\.0653|
 |1|0r7CVbZTWZgbTCYdfa2P31|memories  dillon francis remix|maroon 5|67\.0|63rPSO264uRjW1X5E6cWv6|Memories \(Dillon Francis Remix\)|2019-12-13|Pop Remix|37i9dQZF1DXcZDD7cfEKhW|pop|dance pop|0\.726|0\.815|11\.0|-4\.969|1\.0|0\.0373|0\.0724|0\.00421|0\.357|
