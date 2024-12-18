@@ -58,7 +58,6 @@ warnings.filterwarnings("ignore")
 - **Tujuan Awal**: Menganalisis data genre musik di Spotify untuk mendapatkan wawasan menarik.
 - **Jumlah Variabel**: Dataset awal memiliki 15 kolom.
 - **Kekhasan Dataset**: Data berisi beberapa nilai kosong (missing values) yang perlu diimputasi dan beberapa atribut numerik yang memerlukan normalisasi.
-- **Bentukan Dataset** :
   
 ### Langkah Pembersihan Data
 1. **Mengimpor Data**:
