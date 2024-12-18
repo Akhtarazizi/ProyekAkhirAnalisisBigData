@@ -62,7 +62,7 @@ warnings.filterwarnings("ignore")
    Missing values diisi menggunakan strategi mean/mode dengan `SimpleImputer`.
 3. **Normalisasi Data**:
    Data numerik dinormalisasi menggunakan `MinMaxScaler`.
-4. **Menghapus Kolom Yang Tidak di Gunakan**
+4. **Menghapus Kolom Yang Tidak di Gunakan**:
    Data atau kolom yang tidak relevan dan tidak memiliki keterkaitan terhadap proses analisis di drop atau dihapus kolom tersebut guna mempermudah dalam melakukan proses analisis selanjutnya dan menghasilkan data yang bersih, kolom `track_id`, `track_album_id`, dan `playlist_id` dihapus karena kolom-kolom tersebut tidak terdapat nilai yang spesifik sehingga tidak dapat atau tidak ada kelayakan untuk melakukan analisis dimana kolom tersebut berisikan angka dan huruf bercampuran.
 
 ### Dataset Setelah Dibersihkan
