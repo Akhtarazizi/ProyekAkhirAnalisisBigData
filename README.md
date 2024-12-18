@@ -40,7 +40,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
-from sklearn.model_selection import train_test_split
 from sklearn.cluster import KMeans
 
 # Menonaktifkan pesan peringatan
@@ -59,7 +58,9 @@ warnings.filterwarnings("ignore")
 - **Tujuan Awal**: Menganalisis data genre musik di Spotify untuk mendapatkan wawasan menarik.
 - **Jumlah Variabel**: Dataset awal memiliki 15 kolom.
 - **Kekhasan Dataset**: Data berisi beberapa nilai kosong (missing values) yang perlu diimputasi dan beberapa atribut numerik yang memerlukan normalisasi.
-
+- **Bentukan Dataset** :
+  'spotify_songs.csv'
+ 
 ### Langkah Pembersihan Data
 1. **Mengimpor Data**:
    Dataset diimpor menggunakan Pandas.
@@ -72,7 +73,7 @@ warnings.filterwarnings("ignore")
 Setelah pembersihan, data final mencakup 12 kolom utama yang siap untuk dianalisis lebih lanjut. Berikut adalah cuplikan data:
 ```python
 # Cuplikan Data
-print(data_cleaned.head())
+print(df.head())
 ```
 
 ---
