@@ -12,9 +12,7 @@
 
 ## Pendahuluan
 ### Pernyataan Masalah
-Musik adalah bagian integral dari kehidupan manusia. Spotify, sebagai salah satu platform streaming musik terbesar di dunia, menyediakan berbagai data tentang genre musik, yang dapat dimanfaatkan untuk mendapatkan wawasan yang menarik. Namun, banyak data ini belum diolah secara optimal untuk menjawab pertanyaan seperti:
-- Apa saja genre musik yang paling populer?
-- Bagaimana distribusi genre berdasarkan berbagai metrik, seperti durasi atau energy?
+Popularitas sebuah lagu sering kali menjadi tolok ukur kesuksesan dalam industri musik. Bagi artis, produser, dan label rekaman, memahami faktor yang menentukan popularitas lagu sangatlah penting untuk menciptakan karya yang tidak hanya relevan secara artistik tetapi juga menarik bagi audiens. Dengan meningkatnya platform streaming musik seperti Spotify, data terkait performa lagu kini dapat diakses dengan lebih mudah. Penelitian untuk memprediksi popularitas lagu dapat membantu industri musik membuat keputusan yang lebih strategis dan meningkatkan peluang sukses lagu baru. Topik ini menarik karena menggabungkan dunia musik dengan teknologi data science untuk memberikan wawasan yang berharga.
 
 Analisis ini penting untuk memahami preferensi pendengar musik, yang berguna bagi pengembang konten, penyusun playlist, maupun konsumen umum.
 
