@@ -18,8 +18,8 @@ Analisis ini penting untuk memahami preferensi pendengar musik, yang berguna bag
 
 ### Rencana Penyelesaian Masalah
 1. **Dataset**: Data diperoleh dari [link ini](https://www.dropbox.com/sh/qj0ueimxot3ltbf/AACzMOHv7sZCJsj3ErjtOG7ya?dl=1). Dataset ini mencakup berbagai informasi tentang lagu, seperti genre, durasi, energy, dan atribut lain yang relevan.
-2. **Metodologi**: Kami akan membersihkan data, mengeksplorasi metrik penting, dan menggunakan teknik seperti visualisasi data dan klastering untuk memahami pola dalam genre musik.
-3. **Teknik Analisis**: Menggunakan eksplorasi data deskriptif, klastering dengan K-Means, serta visualisasi mendalam menggunakan Matplotlib dan Seaborn.
+2. **Metodologi**: Kami akan membersihkan data, mengeksplorasi metrik penting, dan menggunakan teknik seperti visualisasi data dan klasifikasi untuk memahami pola dalam genre musik.
+3. **Teknik Analisis**: Menggunakan eksplorasi data deskriptif, klasifikasi dengan KNNClassifier, SVMClassifier dan XGBOOST, serta visualisasi mendalam menggunakan Matplotlib dan Seaborn.
 
 ### Manfaat Analisis
 Hasil analisis ini akan membantu:
