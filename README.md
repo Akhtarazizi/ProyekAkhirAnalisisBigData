@@ -87,7 +87,7 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
 
 ### Hasil Analisis
 1. **Visualisasi Distribusi Genre**:
-   ![Distribusi Genre](gambar/1.JPEG)
+   ![Distribusi Genre](gambar/1.jpeg)
 
 2. **Korelasi Antar Kolom Numerik**:
    ![Matrix Korelasi](gambar/CFCORE.png)
