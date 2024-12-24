@@ -87,7 +87,7 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
 
 ### Hasil Analisis
 1. **Visualisasi Distribusi Genre**:
-   - Genre musik yang paling dominan adalah "Pop" dan "Rock".
+   ![Distribusi Genre](gambar/1.JPEG)
 
 2. **Korelasi Antar Kolom Numerik**:
    ![Matrix Korelasi](gambar/CFCORE.png)
