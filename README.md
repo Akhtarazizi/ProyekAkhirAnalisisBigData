@@ -91,10 +91,10 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
 1. **Visualisasi Distribusi Genre**:
    - Genre musik yang paling dominan adalah "Pop" dan "Rock".
 
-2. **Korelasi Energy-Danceability**:
-   - Energy tinggi cenderung berkorelasi positif dengan danceability.
+2. **Korelasi Antar Kolom Numerik**:
+   ![Matrix Korelasi](gambar/CFCORE.png)
 
-3. **Klastering**:
+4. **Klastering**:
    - Lagu dikelompokkan menjadi 3 klaster utama berdasarkan atribut numerik.
 
 ### Visualisasi (isikan dengan hasil visualisasinya)
