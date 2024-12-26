@@ -101,8 +101,8 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
 
 ## Rangkuman
 ### Penyelesaian Masalah
-- **Pernyataan Masalah**: Mengidentifikasi pola dan wawasan dalam data genre musik Spotify.
-- **Pendekatan**: Pembersihan data, eksplorasi visual, dan klastering K-Means.
+- **Pernyataan Masalah**: Bagaimana memanfaatkan fitur audio dari Spotify untuk membangun model klasifikasi yang dapat memprediksi tingkat popularitas lagu (low, medium, high) secara akurat?
+- **Pendekatan**: Pembersihan data, eksplorasi visual, dan klasifikasi menggunakan KNN, XGBOOST, dan SVM.
 
 ### Temuan Menarik
 - Genre "Pop" mendominasi daftar lagu, diikuti oleh "Rock".
