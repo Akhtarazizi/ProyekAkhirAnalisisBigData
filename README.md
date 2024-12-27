@@ -35,6 +35,9 @@ Hasil analisis ini akan membantu:
 - matplotlib.pyplot
 - seaborn
 - scikit-learn
+- xgboost
+
+atau bisa dilihat pada file requirements.txt
 
 # Menonaktifkan pesan peringatan
 ``` python
