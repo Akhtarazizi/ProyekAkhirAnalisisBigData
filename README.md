@@ -92,6 +92,16 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
 2. **Korelasi Antar Kolom Numerik**:
    ![Matrix Korelasi](gambar/CFCORE.png)
 
+   Berdasarkan matriks di atas dapat disimpulkan :
+   
+   a. **Danceability dan Valence**: Korelasi positif moderat sebesar 0.33, menunjukkan bahwa lagu yang lebih "danceable" cenderung memiliki suasana lebih ceria atau positif.
+   
+   b. **Energy dan Loudness**: Korelasi tinggi sebesar 0.68, menunjukkan bahwa lagu dengan energi tinggi biasanya memiliki tingkat kekerasan suara (loudness) yang lebih besar.
+   
+   c. **Acousticness dan Energy**: Korelasi negatif signifikan sebesar -0.54, menunjukkan bahwa lagu dengan sifat akustik yang tinggi cenderung memiliki energi lebih rendah.
+   
+   d. **Track Popularity**: Tidak memiliki korelasi yang sangat kuat dengan fitur lainnya, yang menunjukkan bahwa popularitas lagu mungkin dipengaruhi oleh kombinasi banyak           faktor atau variabel eksternal (misalnya, promosi atau preferensi audiens).
+
 4. **Klastering**:
    - Lagu dikelompokkan menjadi 3 klaster utama berdasarkan atribut numerik.
 
