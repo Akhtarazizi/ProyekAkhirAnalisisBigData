@@ -129,7 +129,17 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
 1. **Visualisasi Distribusi Genre**:
    ![Distribusi Genre](gambar/1.jpeg)
 
-2. **Korelasi Antar Kolom Numerik**:
+2. **Rata-Rata Popularitas Berdasarkan Genre Lagu**
+
+   ![image](https://github.com/user-attachments/assets/d4f4d638-a962-44ed-8f8e-8bf1334196c6)
+
+   - Pop memiliki rata-rata popularitas tertinggi dibandingkan genre lainnya, menunjukkan bahwa genre ini cenderung lebih disukai dan memiliki daya tarik universal bagi          audiens.
+   - Latin menempati posisi kedua, mencerminkan pertumbuhan signifikan dari genre ini di industri musik global, dengan artis-artis yang sering mencapai kesuksesan                internasional.
+   - Rap, Rock, dan R&B memiliki rata-rata popularitas yang hampir setara, mengindikasikan bahwa genre-genre ini memiliki basis audiens yang kuat tetapi tidak seuniversal          pop.
+   - EDM memiliki rata-rata popularitas terendah di antara genre yang ditampilkan, yang mungkin menunjukkan bahwa genre ini lebih segmented atau memiliki daya tarik yang         lebih niche.
+
+
+4. **Korelasi Antar Kolom Numerik**:
    ![Matrix Korelasi](gambar/CFCORE.png)
 
    Berdasarkan matriks di atas dapat disimpulkan :
