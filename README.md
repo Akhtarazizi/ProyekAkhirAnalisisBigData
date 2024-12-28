@@ -125,7 +125,7 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
    - Menambahkan variabel baru seperti "popularitas relatif" berdasarkan metrik tertentu.
    - Menambahkan fitur baru yaitu `danceability_to_energy_ratio` dibuat untuk menganalisis keseimbangan atau rasio antara danceability (kemampuan lagu untuk mengundang tarian) dan energy (intensitas lagu).
 
-### Hasil Analisis
+### Hasil Temuan 
 1. **Visualisasi Distribusi Genre**:
    ![Distribusi Genre](gambar/1.jpeg)
 
@@ -153,7 +153,11 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
    d. **Track Popularity**: Tidak memiliki korelasi yang sangat kuat dengan fitur lainnya, yang menunjukkan bahwa popularitas lagu mungkin dipengaruhi oleh kombinasi banyak           faktor atau variabel eksternal (misalnya, promosi atau preferensi audiens).
 ---
 
-## Rangkuman
+## Metode Penelitian 
+
+## Hasil 
+
+## Rangkuman 🗒️✏️
 ### Pernyataan Masalah Yang Dibahas
 Kelompok kami mengangkat permasalahan terkait popularitas lagu berdasarkan skor popularitas yang terdapat dalam dataset Spotify Songs. Skor popularitas ini mencerminkan seberapa besar daya tarik atau perhatian yang diterima sebuah lagu di platform Spotify. Untuk analisis ini, kami membagi lagu-lagu dalam dataset ke dalam tiga kategori berdasarkan kriteria berikut:  
 
