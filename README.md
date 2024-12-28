@@ -116,13 +116,14 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
 
 ## Eksplorasi dan Analisis Data
 ### Pendekatan Analisis
-1. **Visualisasi Data**:
+1. **Deskripsi Data**:
    - Membuat distribusi genre musik menggunakan bar chart.
-   - Menampilkan korelasi antara energy dan danceability.
-2. **Klastering**:
-   - Mengelompokkan lagu berdasarkan kesamaan atribut menggunakan algoritma K-Means.
+   - Menampilkan korelasi antara energy dan danceability.   
+2. **Klasifikasi**:
+   - Mengelompokkan popularitas lagu ke dalam tiga kategori berdasarkan skor pada kolom `track_popularity`: **High** (skor > 80) untuk lagu sangat populer dengan daya tarik tinggi, **Medium** (skor 50–80) untuk lagu dengan popularitas sedang dan audiens cukup luas, serta **Low** (skor < 50) untuk lagu yang kurang populer atau diminati segmen terbatas.
 3. **Pembuatan Variabel Baru**:
    - Menambahkan variabel baru seperti "popularitas relatif" berdasarkan metrik tertentu.
+   - Menambahkan fitur baru yaitu `danceability_to_energy_ratio` dibuat untuk menganalisis keseimbangan atau rasio antara danceability (kemampuan lagu untuk mengundang tarian) dan energy (intensitas lagu).
 
 ### Hasil Analisis
 1. **Visualisasi Distribusi Genre**:
@@ -140,9 +141,6 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
    c. **Acousticness dan Energy**: Korelasi negatif signifikan sebesar -0.54, menunjukkan bahwa lagu dengan sifat akustik yang tinggi cenderung memiliki energi lebih rendah.
    
    d. **Track Popularity**: Tidak memiliki korelasi yang sangat kuat dengan fitur lainnya, yang menunjukkan bahwa popularitas lagu mungkin dipengaruhi oleh kombinasi banyak           faktor atau variabel eksternal (misalnya, promosi atau preferensi audiens).
-
-4. **Klastering**:
-   - Lagu dikelompokkan menjadi 3 klaster utama berdasarkan atribut numerik.
 
 ### Visualisasi (isikan dengan hasil visualisasinya)
 
