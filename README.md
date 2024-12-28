@@ -157,10 +157,14 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
 ---
 
 ## Rangkuman
-### Penyelesaian Masalah
-- **Pernyataan Masalah**: Bagaimana memanfaatkan fitur audio dari Spotify untuk membangun model klasifikasi yang dapat memprediksi tingkat popularitas lagu (low, medium, high) secara akurat?
-- **Pendekatan**: Pembersihan data, eksplorasi visual, dan klasifikasi menggunakan KNN, XGBOOST, dan SVM.
+### Pernyataan Masalah Yang Dibahas
+Kelompok kami mengangkat permasalahan terkait popularitas lagu berdasarkan skor popularitas yang terdapat dalam dataset Spotify Songs. Skor popularitas ini mencerminkan seberapa besar daya tarik atau perhatian yang diterima sebuah lagu di platform Spotify. Untuk analisis ini, kami membagi lagu-lagu dalam dataset ke dalam tiga kategori berdasarkan kriteria berikut:  
 
+1. *High Popularity*: Lagu dengan skor popularitas di atas 80 dianggap sangat populer. Lagu-lagu ini biasanya memiliki daya tarik yang tinggi di kalangan audiens, sering menjadi hits besar, dan mendominasi playlist populer.  
+2. *Medium Popularity*: Lagu dengan skor popularitas antara 50 hingga 80 dianggap memiliki popularitas sedang. Lagu-lagu dalam kategori ini memiliki audiens yang cukup luas tetapi belum mencapai puncak popularitas.  
+3. *Low Popularity*: Lagu dengan skor di bawah 50 dianggap memiliki popularitas rendah. Lagu-lagu ini cenderung kurang menarik perhatian atau hanya diminati oleh segmen audiens tertentu.  
+
+Tujuan utama dari pengelompokkan ini adalah untuk memahami faktor-faktor yang memengaruhi skor popularitas sebuah lagu. Dengan menganalisis fitur audio yang relevan seperti danceability, energy, tempo, loudness, dan lainnya, kami berharap dapat menemukan pola atau karakteristik unik yang menentukan tingkat popularitas sebuah lagu
 ### Temuan Menarik
 - Genre "Pop" mendominasi daftar lagu, diikuti oleh "Rock".
 - Lagu dengan energy tinggi lebih cenderung memiliki danceability tinggi.
