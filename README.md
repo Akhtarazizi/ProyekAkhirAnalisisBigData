@@ -48,14 +48,50 @@ warnings.filterwarnings("ignore")
 
 ## Data Preparation
 ### Sumber Data
-- Dataset diperoleh dari [link ini](https://www.dropbox.com/sh/qj0ueimxot3ltbf/AACzMOHv7sZCJsj3ErjtOG7ya?dl=1).
-- Dataset mencakup informasi tentang berbagai atribut lagu, seperti genre, durasi, energy, danceability, dan lain-lain.
+- Dataset tersedia dalam [tautan berikut ini](https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2020/2020-01-21/spotify_songs.csv)
+- Dataset diperoleh dari download secara langsung dengan menggunakan [link berikut ini](https://www.dropbox.com/sh/qj0ueimxot3ltbf/AACzMOHv7sZCJsj3ErjtOG7ya?dl=1).
 
 ### Deskripsi Dataset
-- **Tujuan Awal**: Menganalisis data genre musik di Spotify untuk mendapatkan wawasan menarik.
-- **Jumlah Variabel**: Dataset awal memiliki 24 kolom.
-- **Kekhasan Dataset**: Data berisi beberapa nilai kosong (missing values) yang perlu diimputasi dan beberapa atribut numerik yang memerlukan normalisasi.
-  
+Dataset **Spotify Songs** diambil pada tanggal 21 Januari 2020 melalui paket R bernama **spotifyr**, yang dirancang oleh Charlie Thompson, Josiah Parry, Donal Phipps, dan Tom Wolff untuk mempermudah pengambilan data pribadi atau metadata umum dari API Spotify. Tujuan awal dari dataset ini adalah menyediakan metadata lagu yang memungkinkan pengguna untuk menganalisis berbagai fitur audio seperti danceability, energy, tempo, dan lainnya. Dataset ini dirancang untuk mendukung eksplorasi berbasis data terkait karakteristik musik, analisis genre, dan tren musik populer, serta memfasilitasi eksperimen dalam machine learning, seperti klasifikasi lagu berdasarkan genre atau clustering berdasarkan fitur audio. Dataset ini berisi sekitar 5000 lagu dari 6 kategori utama, yaitu EDM, Latin, Pop, R&B, Rap, dan Rock.  
+
+Dataset ini memiliki **23 variabel**, antara lain:  
+1. **track_id** (ID unik untuk setiap lagu),  
+2. **track_name** (nama lagu),  
+3. **track_artist** (nama artis),  
+4. **track_popularity** (popularitas lagu, skala 0–100),  
+5. **track_album_id** (ID unik album),  
+6. **track_album_name** (nama album),  
+7. **track_album_release_date** (tanggal rilis album),  
+8. **playlist_name** (nama playlist),  
+9. **playlist_id** (ID unik playlist),  
+10. **playlist_genre** (genre playlist),  
+11. **playlist_subgenre** (subgenre playlist),  
+12. **danceability** (kelayakan untuk menari, 0.0–1.0),  
+13. **energy** (intensitas dan aktivitas, 0.0–1.0),  
+14. **key** (nada dasar lagu, 0–11),  
+15. **loudness** (kekerasan suara dalam desibel),  
+16. **mode** (modus lagu, 0 untuk minor dan 1 untuk mayor),  
+17. **speechiness** (proporsi elemen ucapan, 0.0–1.0),  
+18. **acousticness** (keakustikan lagu, 0.0–1.0),  
+19. **instrumentalness** (tingkat instrumental, 0.0–1.0),  
+20. **liveness** (kemungkinan direkam live, 0.0–1.0),  
+21. **valence** (tingkat positif atau kebahagiaan, 0.0–1.0),  
+22. **tempo** (kecepatan dalam BPM), dan  
+23. **duration_ms** (durasi lagu dalam milidetik).  
+
+Kekhasan data sumber mencakup bagaimana nilai yang hilang dicatat dan dikelola. Dalam dataset ini, nilai yang hilang dicatat menggunakan **NA** (Not Available), yang merupakan standar dalam lingkungan R untuk menunjukkan data yang tidak tersedia atau hilang. Nilai hilang dapat terjadi pada variabel tertentu karena keterbatasan metadata yang disediakan oleh API Spotify, misalnya jika sebuah lagu atau album tidak memiliki informasi seperti genre, subgenre, atau nilai akustik. Penyebab lainnya bisa mencakup masalah teknis dalam pengambilan data melalui API, seperti batasan akses atau kesalahan permintaan.  
+
+Untuk menangani nilai hilang, pengguna dapat menerapkan beberapa metode imputasi seperti:  
+1. **Menggunakan rata-rata atau median** untuk variabel numerik seperti `danceability`, `energy`, atau `tempo`.  
+2. **Menggunakan mode** untuk variabel kategori seperti `playlist_genre` atau `playlist_subgenre`.  
+3. **KNN imputasi** untuk memperkirakan nilai hilang berdasarkan kemiripan dengan data lain.  
+4. **Model prediktif**, di mana variabel dengan nilai hilang diprediksi menggunakan model berdasarkan variabel lain.  
+5. **Menghapus baris atau kolom** yang mengandung nilai hilang jika jumlahnya relatif kecil.  
+
+Pengguna disarankan untuk menangani nilai yang hilang ini sesuai kebutuhan analisis atau model yang digunakan. Dataset ini sebelumnya digunakan oleh Kaylin Pavlik dalam blognya untuk mengeksplorasi dan mengklasifikasi lagu berdasarkan fitur audio. Dokumentasi lebih lengkap dapat ditemukan di [ReadMe Spotify Songs (TidyTuesday)](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/readme.md).
+
+
+
 ### Langkah Pembersihan Data
 1. **Mengimpor Data**:
    Dataset diimpor menggunakan Pandas.
