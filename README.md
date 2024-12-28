@@ -1,7 +1,7 @@
 # ProyekAkhirAnalisisBigData
 **Proyek Akhir Analisis Big Data** adalah luaran mata kuliah yang diampu oleh **Bapak Yuda Munarko, S.Kom., M.Sc.** Proyek ini bertujuan menganalisis data Spotify untuk memahami pola genre musik melalui klasifikasi, visualisasi, dan eksplorasi data. Luaran ini bermanfaat untuk penyedia konten, konsumen, dan pengembang fitur berbasis data.
 
-# Spotify Genre Analysis
+# Song Popularity Prediction on Spotify Through Classification Models 🎧
 
 ## Tim Kami
 1. **Marsela Margareta** - NIM: 202110370311247 (Kelas: Analisis Big Data A)  
@@ -151,9 +151,6 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
    c. **Acousticness dan Energy**: Korelasi negatif signifikan sebesar -0.54, menunjukkan bahwa lagu dengan sifat akustik yang tinggi cenderung memiliki energi lebih rendah.
    
    d. **Track Popularity**: Tidak memiliki korelasi yang sangat kuat dengan fitur lainnya, yang menunjukkan bahwa popularitas lagu mungkin dipengaruhi oleh kombinasi banyak           faktor atau variabel eksternal (misalnya, promosi atau preferensi audiens).
-
-### Visualisasi (isikan dengan hasil visualisasinya)
-
 ---
 
 ## Rangkuman
