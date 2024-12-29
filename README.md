@@ -215,7 +215,7 @@ Berdasarkan hasil analisis ini, dapat disimpulkan bahwa XGBoost adalah algoritma
 
 
 ### Implikasi Analisis Kami untuk Konsumen Spotify
-Hasil analisis yang kami lakukan menghadirkan wawasan penting yang dapat memberikan pengalaman baru dan lebih bermakna bagi para konsumen musik, khususnya pengguna Spotify. Berikut adalah poin-poin utama yang menjadi implikasi dari analisis kami:  
+ Hasil analisis yang kami lakukan menghadirkan wawasan penting yang dapat memberikan pengalaman baru dan lebih bermakna bagi para konsumen musik, khususnya pengguna Spotify. Berikut adalah poin-poin utama yang menjadi implikasi dari analisis kami:  
 
 🎵 *1. Membuat Playlist yang Lebih Personal*  
 Dengan memahami faktor-faktor seperti danceability, energy, tempo, dan valence, konsumen dapat lebih mudah membuat playlist yang mencerminkan suasana hati atau preferensi pribadi mereka. Misalnya, untuk suasana energik, pilih lagu dengan skor energy tinggi, atau untuk suasana santai, cari lagu dengan acousticness tinggi.  
@@ -234,7 +234,6 @@ Dengan mengetahui faktor-faktor yang menentukan popularitas, konsumen dapat lebi
 
 *Kesimpulan*  
 Hasil analisis kami membuka jalan bagi konsumen untuk menikmati musik secara lebih personal, kreatif, dan penuh makna. Baik untuk mengikuti tren, mencari lagu-lagu baru, atau memahami dinamika musik populer, wawasan ini dirancang untuk meningkatkan pengalaman mendengarkan musik di era digital. 🎵✨
----
 
 ### Keterbatasan Analisis dan Peluang untuk Pengembangan
 
@@ -276,5 +275,5 @@ Meskipun analisis kami memberikan wawasan yang berguna tentang popularitas lagu,
 ---
 
 **Catatan:**
-Kode lengkap dapat dijalankan tanpa error dan telah diuji dengan dataset terkait. README ini memberikan pengantar untuk memahami dan mereplikasi analisis kami.
+Kode lengkap sudah dijalankan tanpa error dan telah diuji dengan dataset terkait. README ini memberikan pengantar untuk memahami dan mereplikasi analisis kami.
 
