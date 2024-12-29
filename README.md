@@ -204,15 +204,14 @@ Tujuan utama dari pengelompokkan ini adalah untuk memahami faktor-faktor yang me
 ### Data yang Digunakan dan Metodologi
 Penelitian ini menggunakan dataset Spotify Songs, yang berisi informasi lengkap mengenai lagu-lagu yang ada di platform Spotify. Dataset ini mencakup berbagai atribut, seperti nama lagu, nama artis, nama album, serta skor popularitas yang mencerminkan seberapa populer suatu lagu di kalangan pengguna Spotify. Selain itu, dataset ini juga mencakup fitur audio seperti tingkat danceability, energy, tempo, loudness, dan lainnya, yang menggambarkan karakteristik musik dari setiap lagu. Berdasarkan skor popularitas tersebut, lagu-lagu dalam dataset dibagi menjadi tiga kategori: High Popularity, Medium Popularity, dan Low Popularity, yang masing-masing mewakili tingkat popularitas yang berbeda. Untuk menganalisis faktor-faktor yang memengaruhi popularitas lagu, penelitian ini menerapkan tiga algoritma klasifikasi yang umum digunakan, yaitu K-Nearest Neighbors (KNN), Support Vector Machine (SVM), dan XGBoost. Ketiga algoritma ini dipilih karena kemampuan mereka dalam menangani data yang kompleks dan dapat memberikan wawasan yang lebih mendalam mengenai pola-pola yang ada dalam fitur audio lagu. Dalam penelitian ini, kami akan membandingkan kinerja dari masing-masing algoritma untuk menentukan mana yang paling efektif dalam mengklasifikasikan lagu berdasarkan tingkat popularitasnya, dengan harapan dapat mengidentifikasi faktor-faktor audio yang berperan besar dalam menarik perhatian pendengar di Spotify.
 
-### Temuan Menarik
-- Genre "Pop" mendominasi daftar lagu, diikuti oleh "Rock".
-- Lagu dengan energy tinggi lebih cenderung memiliki danceability tinggi.
+### Wawasan Menarik beserta analisis-nya
 
-### Implikasi Analisis
+
+### Implikasi Analisis terhadap konsumen
 - Konsumen dapat menggunakan wawasan ini untuk menemukan musik yang sesuai dengan preferensi mereka.
 - Spotify dapat memanfaatkan pola ini untuk meningkatkan rekomendasi.
 
-### Keterbatasan
+### Keterbatasan analisis dan solusi
 - Analisis ini terbatas pada atribut yang ada dalam dataset.
 - Penelitian lebih lanjut dapat mencakup data tambahan seperti lirik lagu atau sentimen pendengar.
 
