@@ -168,8 +168,18 @@ Berdasarkan confusion matrik di atas, dapat disimpulkan sebagai berikut :
 - Kelas High memiliki jumlah prediksi benar yang lebih sedikit dibanding kelas lain, kemungkinan karena ukuran data kelas     High lebih kecil atau karena model sulit memisahkan fitur kelas High dari kelas lainnya.
 
 B. **Support Vector Machine (SVM)**
+SVM mencari hyperplane (garis pemisah) yang membedakan kategori-kategori tersebut dengan memaksimalkan margin antara data dari setiap kategori. Jika data tidak dapat dipisahkan secara linear, SVM menggunakan kernel untuk memetakan data ke dimensi yang lebih tinggi agar pemisahan antar kelas dapat dilakukan.
+
+
+![image](https://github.com/user-attachments/assets/2ee54e4f-0695-4fe3-ac7f-a7f7a47d3c9e)
+
 
 C. **Extreme Gradient Boosting (XGBoost)**
+
+Dalam konteks prediksi popularitas lagu, XGBoost digunakan untuk memprediksi kategori popularitas lagu ("High", "Medium", atau "Low") dengan membangun model yang menggabungkan beberapa pohon keputusan secara berurutan, di mana setiap pohon keputusan baru berfokus pada kesalahan yang dibuat oleh pohon sebelumnya. 
+
+
+![image](https://github.com/user-attachments/assets/5ef49f37-c822-4f8d-9591-9835bd01daf9)
 
 ## Rangkuman 🗒️✏️
 ### Pernyataan Masalah Yang Dibahas
