@@ -153,9 +153,23 @@ Setelah pembersihan, data final mencakup 21 kolom utama yang siap untuk dianalis
    d. **Track Popularity**: Tidak memiliki korelasi yang sangat kuat dengan fitur lainnya, yang menunjukkan bahwa popularitas lagu mungkin dipengaruhi oleh kombinasi banyak           faktor atau variabel eksternal (misalnya, promosi atau preferensi audiens).
 ---
 
-## Metode Penelitian 
+## Metode & Hasil Penelitian
 
-## Hasil 
+A. **K-Nearest Neighbors (KNN)**
+
+Algoritma ini menghitung jarak antara lagu tersebut dengan lagu-lagu lain dalam dataset latih, kemudian memilih K tetangga terdekat. Berikut hasil klasifikasi menggunakan KNN : 
+
+![image](https://github.com/user-attachments/assets/5aea0f17-134c-4f1a-9bb8-10cc5414f549)
+
+Berdasarkan confusion matrik di atas, dapat disimpulkan sebagai berikut : 
+
+- Model memiliki performa terbaik pada kelas Low (2441 prediksi benar) dibandingkan kelas High (179 prediksi benar) dan       Medium (1217 prediksi benar).
+- Kesalahan terbesar terjadi pada kelas Medium yang sering diprediksi sebagai Low (1313 sampel). Hal ini mungkin              menunjukkan adanya overlap dalam fitur antara kelas Medium dan Low.
+- Kelas High memiliki jumlah prediksi benar yang lebih sedikit dibanding kelas lain, kemungkinan karena ukuran data kelas     High lebih kecil atau karena model sulit memisahkan fitur kelas High dari kelas lainnya.
+
+B. **Support Vector Machine (SVM)**
+
+C. **Extreme Gradient Boosting (XGBoost)**
 
 ## Rangkuman 🗒️✏️
 ### Pernyataan Masalah Yang Dibahas
