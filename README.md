@@ -173,6 +173,10 @@ SVM mencari hyperplane (garis pemisah) yang membedakan kategori-kategori tersebu
 
 ![image](https://github.com/user-attachments/assets/2ee54e4f-0695-4fe3-ac7f-a7f7a47d3c9e)
 
+- Model cenderung memiliki performa yang cukup baik pada kelas Medium (1846 benar), tetapi mengalami kesalahan yang           signifikan dalam mengklasifikasikan data ke kelas Low (banyak data dari kelas lain masuk ke Low).
+- Kesalahan terbesar terjadi saat mengklasifikasikan kelas Low dan Medium, dengan banyaknya data yang salah diprediksi di     antara kedua kelas tersebut.
+- Kelas High memiliki jumlah kesalahan prediksi yang relatif lebih kecil dibandingkan kelas lain.
+
 
 C. **Extreme Gradient Boosting (XGBoost)**
 
@@ -180,6 +184,12 @@ Dalam konteks prediksi popularitas lagu, XGBoost digunakan untuk memprediksi kat
 
 
 ![image](https://github.com/user-attachments/assets/5ef49f37-c822-4f8d-9591-9835bd01daf9)
+
+- Kinerja model pada kelas Medium sangat baik, dengan 2880 data diklasifikasikan benar, menunjukkan bahwa model dapat         mengenali kelas Medium dengan akurasi tinggi.
+- Kelas Low menunjukkan banyak kesalahan klasifikasi ke kelas Medium (1359 data), sehingga perlu ditingkatkan akurasi untuk   membedakan antara Medium dan Low.
+- Kelas High memiliki jumlah data yang cukup kecil, tetapi masih terdapat beberapa kesalahan klasifikasi ke Medium (30) dan   Low (49).
+  
+Sebagian besar kesalahan terjadi antara kelas Medium dan Low, yang mungkin menunjukkan kesamaan fitur yang menyebabkan kebingungan pada model.
 
 ## Rangkuman 🗒️✏️
 ### Pernyataan Masalah Yang Dibahas
