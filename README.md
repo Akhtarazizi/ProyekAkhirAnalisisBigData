@@ -205,15 +205,73 @@ Tujuan utama dari pengelompokkan ini adalah untuk memahami faktor-faktor yang me
 Penelitian ini menggunakan dataset Spotify Songs, yang berisi informasi lengkap mengenai lagu-lagu yang ada di platform Spotify. Dataset ini mencakup berbagai atribut, seperti nama lagu, nama artis, nama album, serta skor popularitas yang mencerminkan seberapa populer suatu lagu di kalangan pengguna Spotify. Selain itu, dataset ini juga mencakup fitur audio seperti tingkat danceability, energy, tempo, loudness, dan lainnya, yang menggambarkan karakteristik musik dari setiap lagu. Berdasarkan skor popularitas tersebut, lagu-lagu dalam dataset dibagi menjadi tiga kategori: High Popularity, Medium Popularity, dan Low Popularity, yang masing-masing mewakili tingkat popularitas yang berbeda. Untuk menganalisis faktor-faktor yang memengaruhi popularitas lagu, penelitian ini menerapkan tiga algoritma klasifikasi yang umum digunakan, yaitu K-Nearest Neighbors (KNN), Support Vector Machine (SVM), dan XGBoost. Ketiga algoritma ini dipilih karena kemampuan mereka dalam menangani data yang kompleks dan dapat memberikan wawasan yang lebih mendalam mengenai pola-pola yang ada dalam fitur audio lagu. Dalam penelitian ini, kami akan membandingkan kinerja dari masing-masing algoritma untuk menentukan mana yang paling efektif dalam mengklasifikasikan lagu berdasarkan tingkat popularitasnya, dengan harapan dapat mengidentifikasi faktor-faktor audio yang berperan besar dalam menarik perhatian pendengar di Spotify.
 
 ### Wawasan Menarik beserta analisis-nya
+Dari hasil analisis yang telah dilakukan, kami menemukan beberapa wawasan menarik terkait klasifikasi tingkat popularitas lagu menggunakan algoritma KNN, XGBoost, dan SVM. Pada model KNN, akurasi yang diperoleh adalah 58.4%, dengan performa terbaik pada kategori *Low Popularity*, di mana precision dan recall cukup stabil dibandingkan kategori lainnya. Namun, model ini kurang optimal dalam mengidentifikasi kategori *High Popularity* dan *Medium Popularity*, yang menunjukkan bahwa KNN memiliki keterbatasan dalam menangkap pola kompleks pada data.
+
+Sebaliknya, algoritma XGBoost memberikan hasil yang paling memuaskan dengan akurasi sebesar 66%. Model ini sangat unggul dalam mengklasifikasikan kategori *High Popularity*, mencapai precision hingga *96%* dan recall sebesar *69%*, menghasilkan f1-score yang tinggi. Performa yang lebih merata pada kategori *Medium Popularity* dan *Low Popularity* juga menunjukkan bahwa XGBoost mampu menangani distribusi data yang tidak seimbang dengan baik. Keunggulan ini mengindikasikan bahwa XGBoost lebih andal dalam mempelajari pola hubungan antar fitur yang kompleks.
+
+Sementara itu, model SVM memberikan akurasi terendah, yaitu *49%*. Meski recall pada kategori *High Popularity* cukup tinggi (81%), precision yang rendah (14%) mengurangi efektivitasnya secara keseluruhan. Selain itu, performa SVM pada kategori *Medium Popularity* dan *Low Popularity* juga kurang konsisten, yang mengindikasikan bahwa model ini tidak cukup mampu menggeneralisasi pola dari dataset.
+
+Berdasarkan hasil analisis ini, dapat disimpulkan bahwa XGBoost adalah algoritma yang paling efektif untuk memprediksi popularitas lagu dalam dataset Spotify Songs. Model ini tidak hanya memberikan akurasi tertinggi tetapi juga mampu mengidentifikasi lagu dengan tingkat popularitas tinggi secara konsisten. Hal ini menunjukkan potensi besar XGBoost dalam menganalisis data kompleks dan menangkap pola yang menentukan tingkat popularitas lagu.
 
 
-### Implikasi Analisis terhadap konsumen
-- Konsumen dapat menggunakan wawasan ini untuk menemukan musik yang sesuai dengan preferensi mereka.
-- Spotify dapat memanfaatkan pola ini untuk meningkatkan rekomendasi.
+### Implikasi Analisis Kami untuk Konsumen Spotify
+Hasil analisis yang kami lakukan menghadirkan wawasan penting yang dapat memberikan pengalaman baru dan lebih bermakna bagi para konsumen musik, khususnya pengguna Spotify. Berikut adalah poin-poin utama yang menjadi implikasi dari analisis kami:  
 
-### Keterbatasan analisis dan solusi
-- Analisis ini terbatas pada atribut yang ada dalam dataset.
-- Penelitian lebih lanjut dapat mencakup data tambahan seperti lirik lagu atau sentimen pendengar.
+🎵 *1. Membuat Playlist yang Lebih Personal*  
+Dengan memahami faktor-faktor seperti danceability, energy, tempo, dan valence, konsumen dapat lebih mudah membuat playlist yang mencerminkan suasana hati atau preferensi pribadi mereka. Misalnya, untuk suasana energik, pilih lagu dengan skor energy tinggi, atau untuk suasana santai, cari lagu dengan acousticness tinggi.  
+
+🎧 *2. Menemukan Permata Tersembunyi*  
+Lagu-lagu dari kategori *Medium Popularity* atau *Low Popularity* mungkin tidak mendominasi chart, tetapi banyak di antaranya memiliki karakteristik menarik yang sering kali luput dari perhatian. Konsumen dapat mengeksplorasi musik-musik ini untuk menemukan karya yang unik dan berkesan.  
+
+📈 *3. Memahami Tren Popularitas Musik*  
+Analisis ini menunjukkan bahwa lagu-lagu dengan skor popularitas tinggi cenderung menjadi hits besar dan sering muncul di playlist populer. Namun, konsumen juga bisa menggunakan wawasan ini untuk tidak sekadar mengikuti tren, tetapi mengeksplorasi berbagai kategori musik lain yang sesuai dengan keinginan mereka.  
+
+🌟 *4. Menikmati Musik dengan Perspektif Baru*  
+Hasil ini mengedukasi konsumen bahwa popularitas bukan satu-satunya indikator kualitas. Dengan wawasan ini, konsumen dapat lebih menghargai lagu-lagu yang mungkin tidak begitu populer tetapi tetap berkualitas tinggi.  
+
+🎶 *5. Membantu Eksplorasi yang Lebih Terarah*  
+Dengan mengetahui faktor-faktor yang menentukan popularitas, konsumen dapat lebih terarah dalam menjelajahi dunia musik. Mereka tidak hanya mendapatkan rekomendasi dari algoritma, tetapi juga secara aktif mencari musik yang benar-benar sesuai dengan selera mereka.  
+
+*Kesimpulan*  
+Hasil analisis kami membuka jalan bagi konsumen untuk menikmati musik secara lebih personal, kreatif, dan penuh makna. Baik untuk mengikuti tren, mencari lagu-lagu baru, atau memahami dinamika musik populer, wawasan ini dirancang untuk meningkatkan pengalaman mendengarkan musik di era digital. 🎵✨
+---
+
+### Keterbatasan Analisis dan Peluang untuk Pengembangan
+
+Dalam analisis yang kami lakukan, terdapat beberapa keterbatasan yang perlu dicatat, serta peluang untuk mengembangkan penelitian ini di masa depan. Berikut adalah pembahasan lengkapnya:  
+
+🛠️ *1. Keterbatasan Dataset*  
+Dataset yang kami gunakan berasal dari Spotify Songs, yang hanya mencakup fitur-fitur audio tertentu seperti danceability, energy, dan valence. Namun, dataset ini tidak mencakup variabel penting lain seperti faktor demografi pendengar, strategi pemasaran artis, atau pengaruh platform media sosial, yang juga dapat memengaruhi popularitas lagu.  
+
+💡 *Solusi dan Pengembangan:*  
+Penelitian di masa depan dapat memperkaya dataset dengan menggabungkan data dari berbagai sumber, seperti data streaming dari platform lain (YouTube atau Apple Music), informasi media sosial (jumlah likes, shares, atau trending tags), dan preferensi demografis pendengar.
+
+📊 *2. Keterbatasan Metode Klasifikasi*  
+Kami menggunakan tiga algoritma—KNN, SVM, dan XGBoost—untuk mengklasifikasikan popularitas lagu. Namun, hasil akurasi menunjukkan bahwa setiap algoritma memiliki kekuatan dan kelemahan masing-masing. Model seperti KNN memiliki akurasi yang relatif rendah, sedangkan XGBoost memberikan hasil lebih baik tetapi masih dapat ditingkatkan.  
+
+💡 *Solusi dan Pengembangan:*  
+Menggunakan model lain seperti neural networks, deep learning (contohnya LSTM untuk menangkap pola waktu dalam musik), atau ensemble learning yang menggabungkan beberapa algoritma untuk meningkatkan akurasi dan generalisasi. Hyperparameter tuning lebih lanjut juga dapat dilakukan untuk memaksimalkan performa model.
+
+🔄 *3. Klasifikasi Berdasarkan Tiga Kategori*  
+Pembagian lagu ke dalam tiga kategori popularitas (High, Medium, Low) dilakukan berdasarkan skor numerik yang kami tentukan secara manual. Klasifikasi ini mungkin kurang fleksibel karena tidak mempertimbangkan aspek dinamis dari popularitas lagu yang dapat berubah seiring waktu.  
+
+💡 *Solusi dan Pengembangan:*  
+Menggunakan metode clustering atau pendekatan unsupervised learning untuk membagi kategori popularitas secara otomatis berdasarkan pola data. Ini memungkinkan identifikasi grup yang lebih organik dan relevan dengan pola pendengar.  
+
+⏳ *4. Tidak Mempertimbangkan Waktu Rilis Lagu*  
+Faktor waktu rilis lagu dan perubahan tren musik dari tahun ke tahun tidak dimasukkan dalam analisis. Lagu yang dirilis lebih baru mungkin memiliki kesempatan lebih besar untuk mendapatkan skor popularitas yang lebih tinggi karena tren pendengarannya masih segar.  
+
+💡 *Solusi dan Pengembangan:*  
+Menggunakan analisis time series untuk memahami bagaimana popularitas lagu berubah seiring waktu dan memperhitungkan relevansi tren dalam algoritma prediksi.
+
+🔍 *5. Interpretasi Fitur Musik Terbatas*  
+Fitur seperti valence atau instrumentalness hanya diinterpretasikan secara statistik tanpa menggali hubungan yang lebih mendalam terhadap pola popularitas.  
+
+💡 *Solusi dan Pengembangan:*  
+Penelitian masa depan dapat menggunakan metode explainable AI (XAI) untuk memberikan interpretasi yang lebih transparan dan bermakna tentang bagaimana setiap fitur berkontribusi terhadap prediksi popularitas lagu.
+
+*Kesimpulan*  
+Meskipun analisis kami memberikan wawasan yang berguna tentang popularitas lagu, terdapat ruang besar untuk pengembangan lebih lanjut. Dengan memperkaya data, mencoba pendekatan baru, dan memasukkan lebih banyak faktor yang relevan, penelitian ini dapat memberikan hasil yang lebih komprehensif dan akurat, tidak hanya untuk memahami tren musik tetapi juga untuk meningkatkan pengalaman konsumen di platform streaming seperti Spotify. 🎶
 
 ---
 
